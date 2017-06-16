@@ -1,0 +1,101 @@
+﻿<Page
+    x:Class="OnlineBankingApp.StatementsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OnlineBankingApp"
+    xmlns:model="using:OnlineBankingApp.Models"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#003f6c">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="540*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <RelativePanel Grid.Row="0" Background="WhiteSmoke" HorizontalAlignment="Stretch">
+            <TextBlock Text="{x:Bind cardNumber}"
+                       RelativePanel.AlignVerticalCenterWithPanel="True"
+                       RelativePanel.AlignHorizontalCenterWithPanel="True"
+                       Foreground="#003f6c"
+                       TextAlignment="Center"
+                       FontFamily="../Assets/Fonts/Exo2-Regular.ttf#Exo 2"
+                       CharacterSpacing="60"
+                       FontSize="15"/>
+            <Button x:Name="BackButton"
+                    RelativePanel.AlignLeftWithPanel="True"
+                    RelativePanel.AlignVerticalCenterWithPanel="True"
+                    Content="&#xE973;"
+                    Style="{StaticResource NavigationButtonStyle}"
+                    Click="BackButton_Click">
+            </Button>
+        </RelativePanel>
+        <ListView x:Name="listStat" 
+                  Grid.Row="1"
+                  ItemsSource="{Binding StatementList}"
+                  Background="White"
+                  SelectionMode="None"
+                  ContainerContentChanging="listViewContentChanging"
+                  ScrollViewer.HorizontalScrollMode="Disabled"
+                  ScrollViewer.VerticalScrollMode="Enabled"
+                  ScrollViewer.VerticalScrollBarVisibility="Hidden">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="model:Statement">
+                    <RelativePanel Margin="0,10,0,10">
+                        <StackPanel x:Name="panel1" Orientation="Horizontal">
+                            <TextBlock Text="{x:Bind CardAmount}" 
+                                       FontFamily="../Assets/Fonts/Exo2-SemiBold.ttf#Exo 2"
+                                       FontSize="15"/>
+                            <TextBlock Text="{x:Bind Currency}"
+                                       FontFamily="../Assets/Fonts/Exo2-SemiBold.ttf#Exo 2"
+                                       FontSize="15"
+                                       Margin="10,0,0,0"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" 
+                                    RelativePanel.Below="panel1">
+                            <TextBlock Text="{x:Bind Date}" 
+                                       FontSize="13"
+                                       FontFamily="../Assets/Fonts/Exo2-Light.ttf#Exo 2"
+                                       Opacity="0.75"
+                                       Margin="0,3,0,3"
+                                       Foreground="#1e1e1e"/>
+                            <TextBlock Text="{x:Bind Details}"
+                                       TextWrapping="Wrap"
+                                       FontSize="14"
+                                       FontFamily="../Assets/Fonts/Exo2-Medium.ttf#Exo 2"/>
+                        </StackPanel>
+                    </RelativePanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <TextBlock x:Name="tb_empty" 
+                   Grid.Row="1" 
+                   Text="Ничего нет" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top" Margin="0,30,0,0"
+                   Foreground="Gray"
+                   FontSize="16" FontFamily="../Assets/Fonts/Exo2-Light.ttf#Exo 2"
+                   TextAlignment="Center"/>
+        <ProgressRing x:Name="progressRing" Grid.Row="1"
+                          VerticalAlignment="Top"
+                          Margin="0,60,0,0"
+                          Opacity="0.8"
+                          Background="Transparent"
+                          Foreground="#00A200" 
+                          IsActive="{Binding IsActiveProperty, Mode=OneWay}" Height="40" Width="40">
+        </ProgressRing>
+        <StackPanel x:Name="Footer" Grid.Row="2" 
+              Background="#003f6c" 
+              VerticalAlignment="Stretch" 
+              HorizontalAlignment="Stretch"></StackPanel>
+    </Grid>
+
+</Page>

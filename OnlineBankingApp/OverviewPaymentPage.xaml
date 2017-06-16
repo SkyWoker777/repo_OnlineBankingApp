@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="OnlineBankingApp.OverviewPaymentPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OnlineBankingApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#003f6c">
+
+    <Grid Background="WhiteSmoke">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="540*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Информация о платеже"
+                   Grid.Row="0"
+                   Foreground="#003f6c"
+                   TextAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontFamily="../Assets/Fonts/Exo2-Regular.ttf#Exo 2"
+                   FontSize="15"
+                   VerticalAlignment="Center"/>
+        <Button Grid.Row="0" x:Name="BackButton"
+                    Content="&#xE973;"
+                    Style="{StaticResource NavigationButtonStyle}"
+                    Click="BackButton_Click">
+        </Button>
+        <RelativePanel Grid.Row="1" HorizontalAlignment="Stretch"
+                               Background="White">
+            <TextBlock></TextBlock>
+            
+        </RelativePanel>
+        <StackPanel x:Name="Footer" Grid.Row="2" 
+                      Background="#003f6c" 
+                      HorizontalAlignment="Stretch"></StackPanel>
+    </Grid>
+</Page>

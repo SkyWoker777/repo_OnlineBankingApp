@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="OnlineBankingApp.ViewModels.AccountBalanceViewModel">
+    <Position X="13.5" Y="9" Width="4" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="OnlineBankingApp.ViewModels.BaseViewModel" ManuallyRouted="true">
+      <Path>
+        <Point X="18.25" Y="1.312" />
+        <Point X="18.25" Y="1.875" />
+        <Point X="15.513" Y="1.875" />
+        <Point X="15.513" Y="9.044" />
+        <Point X="15.5" Y="9.044" />
+        <Point X="15.5" Y="9" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAgAIAAAAAAAAAAIAAAAAAAACAAAAAAAAACQAAAAA=</HashCode>
+      <FileName>ViewModels\AccountBalanceViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OnlineBankingApp.ViewModels.BaseViewModel" Collapsed="true">
+    <Position X="17.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\BaseViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OnlineBankingApp.ViewModels.ExchangeRatesViewModel">
+    <Position X="20.25" Y="2.25" Width="3" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAgAAAAAAACAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ExchangeRatesViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OnlineBankingApp.ViewModels.MobileRefillViewModel">
+    <Position X="11" Y="2.25" Width="4" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIREAoAAAACAAAEQAAAAEAAgAAAAAAAABAABAE=</HashCode>
+      <FileName>ViewModels\MobileRefillViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OnlineBankingApp.ViewModels.OnCardInUkraineViewModel">
+    <Position X="15.75" Y="5" Width="4" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEQAAAMAUgggSEBAKIAIFAQAGCCAgAAIMIAAAAIgIAA=</HashCode>
+      <FileName>ViewModels\OnCardInUkraineViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OnlineBankingApp.ViewModels.OnCardPrivatBankViewModel">
+    <Position X="20.5" Y="5.25" Width="4" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="OnlineBankingApp.ViewModels.BaseViewModel" ManuallyRouted="true">
+      <Path>
+        <Point X="18.25" Y="1.312" />
+        <Point X="18.25" Y="1.875" />
+        <Point X="23.359" Y="1.875" />
+        <Point X="23.359" Y="4.875" />
+        <Point X="22.5" Y="4.875" />
+        <Point X="22.5" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAMAEggggABAKIAIBAAAGCCAgAAIMIAAAAIgAAA=</HashCode>
+      <FileName>ViewModels\OnCardPrivatBankViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OnlineBankingApp.ViewModels.OnVisaCardAnyBankViewModel">
+    <Position X="10.75" Y="5.5" Width="4" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="OnlineBankingApp.ViewModels.BaseViewModel" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.25" Y="1.312" />
+        <Point X="18.25" Y="1.875" />
+        <Point X="15.25" Y="1.875" />
+        <Point X="15.25" Y="5.15" />
+        <Point X="14.062" Y="5.15" />
+        <Point X="14.062" Y="5.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAMAEgggwABAKIAIBAQAGCCAgAAIMIAAAAIgAAA=</HashCode>
+      <FileName>ViewModels\OnVisaCardAnyBankViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OnlineBankingApp.ViewModels.PaymentStatusViewModel">
+    <Position X="16.25" Y="2.25" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>gAAQAAAIAAAAAAAAAIAAAAIAAACgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\PaymentStatusViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OnlineBankingApp.ViewModels.StatementsViewModel">
+    <Position X="18.25" Y="9" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="OnlineBankingApp.ViewModels.BaseViewModel" ManuallyRouted="true">
+      <Path>
+        <Point X="18.25" Y="1.312" />
+        <Point X="18.25" Y="1.875" />
+        <Point X="19.962" Y="1.875" />
+        <Point X="19.962" Y="8.45" />
+        <Point X="20" Y="8.45" />
+        <Point X="20" Y="9" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAABAAAAAAAAIAAAAAAAACEAAAEAAEAAAAAAAA=</HashCode>
+      <FileName>ViewModels\StatementsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
